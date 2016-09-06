@@ -1,0 +1,34 @@
+STS:
+3 overflow / gt
+2 eq
+1 underflow / lt
+0 zero
+
+0 ret NXT
+1 add ACC ° R__ => ACC, STS
+2 sub ACC ° R__ => ACC, STS
+3 mul ACC ° R__ => ACC, STS
+4 div ACC ° R__ => ACC, STS
+5 and ACC ° R__ => ACC, STS
+6 orr ACC ° R__ => ACC, STS
+7 xor ACC ° R__ => ACC, STS
+8 cmp ACC => STS
+9 ldn NXT => LOS, STS
+A ldm ADR+NXT => LOS, STS
+B sto LOS => ADR+NXT
+C mvr R__ => ACC, STS
+D mva ACC => R__, STS
+E jmp NXT ° STS : ADR => IP
+F zro R__
+
+0 ACC (LOS)
+1-6 R01-R06
+7 ADR0
+8 ADR1
+9 STS
+A UP
+B DOWN
+C NORTH
+D SOUTH
+E WEST
+F EAST
